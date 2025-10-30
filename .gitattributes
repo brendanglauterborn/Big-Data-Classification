@@ -1,0 +1,22 @@
+# --- LANGUAGE TUNING FOR GITHUB LINGUIST ---
+
+# Count R and R Markdown correctly
+*.R linguist-detectable=true
+*.Rmd linguist-language=R
+
+# Treat Jupyter notebooks as code (optional)
+*.ipynb linguist-detectable=true
+*.ipynb linguist-language=Jupyter\ Notebook
+
+# Prevent TeX and docs from inflating stats
+*.tex linguist-documentation
+*.bib linguist-documentation
+*.pdf linguist-documentation
+figures/** linguist-documentation
+docs/** linguist-documentation
+
+# Ignore data and output artifacts
+*.csv linguist-generated=true
+*.rds linguist-generated=true
+*.html linguist-generated=true
+*.log linguist-generated=true
